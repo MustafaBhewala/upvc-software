@@ -1,49 +1,135 @@
-# Getting Started with Create React App
+# UPVC Software - Safe Plast Management System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A comprehensive React-based web application for managing UPVC window manufacturing and sales operations. Built for Safe Plast with integrated Firebase backend for real-time data management.
 
-## Available Scripts
+## 🏗️ Features
 
-In the project directory, you can run:
+- **Dashboard**: Real-time business metrics and KPIs
+- **Window Designer**: Interactive UPVC window configuration tool
+- **Quotation System**: Generate professional quotes with dynamic pricing
+- **Customer Management**: Complete customer database with history
+- **Inventory Tracking**: Stock management for UPVC materials and hardware
+- **Sales Management**: Order processing and sales analytics
+- **Settings**: Company details, tax configuration, and system preferences
+- **Firebase Integration**: Real-time database with authentication
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React 19.1.0, Tailwind CSS 3.4.17
+- **Backend**: Firebase (Firestore, Authentication)
+- **Icons**: Lucide React
+- **Build Tool**: Create React App
+- **Styling**: Tailwind CSS with PostCSS
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (version 16 or higher)
+- npm or yarn package manager
+- Firebase project (for backend services)
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/[your-username]/upvc-software.git
+cd upvc-software
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Configure Firebase:
+   - Create a Firebase project at [console.firebase.google.com](https://console.firebase.google.com)
+   - Set up Firestore database
+   - Configure authentication
+   - Update Firebase configuration in `src/firebase.js`
+
+4. Start the development server:
+```bash
+npm start
+```
+
+5. Open [http://localhost:3000](http://localhost:3000) to view the application
+
+## 📁 Project Structure
+
+```
+src/
+├── components/          # Reusable UI components
+│   ├── Header.js       # Top navigation bar
+│   ├── Sidebar.js      # Side navigation menu
+│   └── KpiCard.js      # Dashboard KPI widgets
+├── pages/              # Main application pages
+│   ├── Dashboard.js    # Business overview
+│   ├── WindowDesigner.js # Window configuration
+│   ├── CreateQuote.js  # Quotation generation
+│   ├── Customers.js    # Customer management
+│   ├── Inventory.js    # Stock management
+│   ├── Sales.js        # Sales tracking
+│   ├── Reports.js      # Analytics and reports
+│   └── Settings.js     # System configuration
+├── firebase.js         # Firebase configuration
+├── App.js             # Main application component
+└── index.js           # Application entry point
+```
+
+## 🔧 Available Scripts
 
 ### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Runs the app in development mode at [http://localhost:3000](http://localhost:3000)
 
 ### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Launches the test runner in interactive watch mode
 
 ### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Builds the app for production to the `build` folder
 
 ### `npm run eject`
+**Note: This is a one-way operation!** Ejects from Create React App for full configuration control
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🏢 Company Information
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Safe Plast**
+- Address: Indore-Ahmadabad Highway, Opp. RTO Office, Nr. Laxshmi Narayan force showroom, Dahod, 389151
+- Email: safeplast.maker@gmail.com
+- Phone: +91 9408427918
+- GSTIN: 24AIDPB1130H2Z4
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🔐 Firebase Setup
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The application uses Firebase for:
+- **Firestore**: Real-time database for storing quotes, customers, inventory
+- **Authentication**: User authentication and authorization
+- **Cloud Functions**: Server-side business logic (if needed)
 
-## Learn More
+## 📱 Responsive Design
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The application is fully responsive and works seamlessly across:
+- Desktop computers
+- Tablets
+- Mobile devices
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is proprietary software developed for Safe Plast. All rights reserved.
+
+## 📞 Support
+
+For support and inquiries, contact:
+- Email: safeplast.maker@gmail.com
+- Phone: +91 9408427918
 
 ### Code Splitting
 
